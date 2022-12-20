@@ -1,38 +1,144 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@300;500&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+#root {
+  max-width: 800px;
+  margin: auto;
+  padding: 5px;
+}
+
+input:focus,
+button:focus {
+  outline: none;
+}
+
+h1,
+h2,
+li,
+button,
+input {
+  font-family: 'Exo', sans-serif;
+}
+
+h1 {
+  color: rgb(0, 0, 0);
+  font-size: 2em;
+  font-weight: 700;
+  margin-top: 10px;
+}
+
+h2 {
+  color: rgb(0, 0, 0);
+  font-size: 1em;
+  font-weight: 400;
+  margin-top: 10px;
+}
+
+header {
   text-align: center;
+  margin: 10px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+footer {
+  text-align: center;
+  color: rgb(104, 104, 104);
+  margin: 10px;
+  font-size: small;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+li {
+  list-style: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+ul {
+  margin: 0px;
+  padding: 0px;
+}
+
+.form-group {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-between;
+}
+
+.form-group form {
+  width: 100%;
+}
+
+.input-field {
+  margin-bottom: 20px;
+  background-color: black;
+  font-size: medium;
   color: white;
+  padding-left: 10px;
+  height: 35px;
+  width: 90%;
+  border: none;
 }
 
-.App-link {
-  color: #61dafb;
+.toDoButton {
+  cursor: pointer;
+  border: none;
+  min-width: 75px;
+  width: 10%;
+  height: 35px;
+  font-size: medium;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.list-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(245, 245, 245);
+  padding: 5px 15px;
+  margin-bottom: 10px;
+  border-bottom: solid 1px #ddd;
+}
+
+.list-container button {
+  cursor: pointer;
+  margin-left:5px;
+  border: none;
+  min-width: 75px;
+  width: 10%;
+  height: 35px;
+  font-size: medium;
+}
+
+.todo-list-done {
+  text-decoration: line-through;
+  color: rgb(157, 157, 157);
+}
+
+::placeholder {
+  font-size: medium;
+  color: rgb(130, 130, 130);
+}
+
+.font-awesome__icon {
+  cursor: pointer;
+  margin-left: 5px;
+  border: none;
+  min-width: 50px;
+  width: 10%;
+}
+
+@media screen and (max-width: 950px) {
+  .toDoButton {
+    width: 15%;
   }
-  to {
-    transform: rotate(360deg);
+  .input-field {
+    width: 85%;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .toDoButton {
+    width: 25%;
+  }
+  .input-field {
+    width: 75%;
   }
 }
