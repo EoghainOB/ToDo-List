@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faCheck,
@@ -60,7 +60,7 @@ const Form = () => {
           <input
             type="text"
             className="input-field"
-            placeholder="Enter to do item"
+            placeholder="Enter item"
             onChange={formHandler}
           />
           <button type="submit" className="toDoButton">

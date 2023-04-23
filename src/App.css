@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Exo:wght@300;500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Exo:wght@300;500&display=swap");
 
 * {
   box-sizing: border-box;
@@ -20,7 +20,7 @@ h2,
 li,
 button,
 input {
-  font-family: 'Exo', sans-serif;
+  font-family: "Exo", sans-serif;
 }
 
 h1 {
@@ -74,7 +74,7 @@ ul {
   color: white;
   padding-left: 10px;
   height: 35px;
-  width: 90%;
+  width: 85%;
   border: none;
 }
 
@@ -82,9 +82,13 @@ ul {
   cursor: pointer;
   border: none;
   min-width: 75px;
-  width: 10%;
+  width: 15%;
   height: 35px;
   font-size: medium;
+}
+
+.toDoButton:hover {
+  background-color: rgb(179, 179, 179);
 }
 
 .list-container {
@@ -99,7 +103,7 @@ ul {
 
 .list-container button {
   cursor: pointer;
-  margin-left:5px;
+  margin-left: 5px;
   border: none;
   min-width: 75px;
   width: 10%;
@@ -114,7 +118,7 @@ ul {
 
 ::placeholder {
   font-size: medium;
-  color: rgb(130, 130, 130);
+  color: rgb(255, 255, 255);
 }
 
 .font-awesome__icon {
@@ -127,10 +131,10 @@ ul {
 
 @media screen and (max-width: 950px) {
   .toDoButton {
-    width: 15%;
+    width: 20%;
   }
   .input-field {
-    width: 85%;
+    width: 80%;
   }
 }
 
