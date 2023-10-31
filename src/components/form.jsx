@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faCheck,
@@ -69,8 +69,12 @@ const Form = () => {
         </form>
       </div>
       <div>
-        {todoList.map((todoItem) => {
-          return (
+        {todoList.length === 0 ? (
+          <div className="doSomething">
+            <h2>Do something</h2>
+          </div>
+        ) : (
+          todoList.map((todoItem) => (
             <ul className="list-container" key={todoItem.id}>
               <li>
                 {!todoItem.isComplete ? (
@@ -97,8 +101,8 @@ const Form = () => {
                 )}
               </li>
             </ul>
-          );
-        })}
+          ))
+        )}
       </div>
     </>
   );
