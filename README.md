@@ -2,6 +2,8 @@
 
 Made using React with the todos stored to localstorage. The user can add new items to the list, mark them as done, while undo will put it back in the previous location in the list. Of course when the task has been marked as done, it can then be deleted.
 
+You can view the site here: <a href="https://to-do-list-mu-lake.vercel.app/">`vercel.app`</a>
+
 ![todolist](https://github.com/EoghainOB/ToDo-List/assets/110406695/b1950688-4367-4b01-9b39-951b6f7b8bb3)
 
 <i>This project is made using: </i>
